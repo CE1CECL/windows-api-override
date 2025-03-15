@@ -1,0 +1,213 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="2.0" InitialTargets="ValidateSolutionConfiguration;ValidateToolsVersions" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_SolutionProjectConfiguration>clib|Win32</_SolutionProjectConfiguration>
+    <_SolutionProjectToolsVersion>2.0</_SolutionProjectToolsVersion>
+    <_SolutionProjectCacheVersion>4.0</_SolutionProjectCacheVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <_SolutionProjectProjects Include="cdistorm.vcproj" />
+    <_SolutionProjectProjects Include="pydistorm.vcproj" />
+  </ItemGroup>
+  <UsingTask TaskName="Microsoft.Build.Tasks.CreateTemporaryVCProject" AssemblyName="Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <UsingTask TaskName="Microsoft.Build.Tasks.ResolveVCProjectOutput" AssemblyName="Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <PropertyGroup Condition=" '$(Configuration)' == '' ">
+    <Configuration>clib</Configuration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == '' ">
+    <Platform>Win32</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(AspNetConfiguration)' == '') ">
+    <AspNetConfiguration>$(Configuration)</AspNetConfiguration>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SolutionDir>C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\</SolutionDir>
+    <SolutionExt>.sln</SolutionExt>
+    <SolutionFileName>distorm.sln</SolutionFileName>
+    <SolutionName>distorm</SolutionName>
+    <SolutionPath>C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln</SolutionPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and '$(MSBuildToolsVersion)' == '2.0'">v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and ('$(MSBuildToolsVersion)' == '3.5' or '$(MSBuildToolsVersion)' == '3.0')">v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and '$(MSBuildToolsVersion)' == '4.0'">v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'clib') and ('$(Platform)' == 'Win32') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+        <ProjectConfiguration Project="{15051CE1-AB10-4239-973D-01B84F2AD0A9}">clib|Win32</ProjectConfiguration>
+        <ProjectConfiguration Project="{E96298DA-D2F7-4619-BA93-26CCDBD13DDA}">py23|Win32</ProjectConfiguration>
+      </SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'py23') and ('$(Platform)' == 'Win32') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+        <ProjectConfiguration Project="{15051CE1-AB10-4239-973D-01B84F2AD0A9}">clib|Win32</ProjectConfiguration>
+        <ProjectConfiguration Project="{E96298DA-D2F7-4619-BA93-26CCDBD13DDA}">py23|Win32</ProjectConfiguration>
+      </SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'py24') and ('$(Platform)' == 'Win32') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+        <ProjectConfiguration Project="{15051CE1-AB10-4239-973D-01B84F2AD0A9}">clib|Win32</ProjectConfiguration>
+        <ProjectConfiguration Project="{E96298DA-D2F7-4619-BA93-26CCDBD13DDA}">py24|Win32</ProjectConfiguration>
+      </SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'py25') and ('$(Platform)' == 'Win32') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+        <ProjectConfiguration Project="{15051CE1-AB10-4239-973D-01B84F2AD0A9}">clib|Win32</ProjectConfiguration>
+        <ProjectConfiguration Project="{E96298DA-D2F7-4619-BA93-26CCDBD13DDA}">py25|Win32</ProjectConfiguration>
+      </SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <Target Name="ValidateSolutionConfiguration">
+    <Error Text="The specified solution configuration &quot;$(Configuration)|$(Platform)&quot; is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform=&quot;Any CPU&quot;) or leave those properties blank to use the default solution configuration." Code="MSB4126" HelpKeyword="MSBuild.SolutionInvalidSolutionConfiguration" Condition="('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' != 'true')" />
+    <Warning Text="The specified solution configuration &quot;$(Configuration)|$(Platform)&quot; is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform=&quot;Any CPU&quot;) or leave those properties blank to use the default solution configuration." Code="MSB4126" HelpKeyword="MSBuild.SolutionInvalidSolutionConfiguration" Condition="('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' == 'true')" />
+    <Message Text="Building solution configuration &quot;$(Configuration)|$(Platform)&quot;." Condition="'$(CurrentSolutionConfigurationContents)' != ''" />
+  </Target>
+  <Target Name="ValidateToolsVersions">
+    <Error Text="The tools version &quot;$(MSBuildToolsVersion)&quot; of the solution does not support building projects with a different tools version." Code="MSB4149" HelpKeyword="MSBuild.SolutionToolsVersionDoesNotSupportProjectToolsVersion" Condition="'$(MSBuildToolsVersion)' == '2.0' and ('$(ProjectToolsVersion)' != '2.0' and '$(ProjectToolsVersion)' != '')" />
+  </Target>
+  <Target Name="cdistorm" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\cdistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="clib|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'clib') and ('$(Platform)' == 'Win32') " />
+    <Message Text="The project &quot;cdistorm&quot; is not selected for building in solution configuration &quot;py23|Win32&quot;." Condition=" ('$(Configuration)' == 'py23') and ('$(Platform)' == 'Win32') " />
+    <Message Text="The project &quot;cdistorm&quot; is not selected for building in solution configuration &quot;py24|Win32&quot;." Condition=" ('$(Configuration)' == 'py24') and ('$(Platform)' == 'Win32') " />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\cdistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="clib|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'py25') and ('$(Platform)' == 'Win32') " />
+  </Target>
+  <Target Name="cdistorm:Clean" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\cdistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="clib|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Clean="true" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'clib') and ('$(Platform)' == 'Win32') " />
+    <Message Text="The project &quot;cdistorm&quot; is not selected for building in solution configuration &quot;py23|Win32&quot;." Condition=" ('$(Configuration)' == 'py23') and ('$(Platform)' == 'Win32') " />
+    <Message Text="The project &quot;cdistorm&quot; is not selected for building in solution configuration &quot;py24|Win32&quot;." Condition=" ('$(Configuration)' == 'py24') and ('$(Platform)' == 'Win32') " />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\cdistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="clib|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Clean="true" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'py25') and ('$(Platform)' == 'Win32') " />
+  </Target>
+  <Target Name="cdistorm:Rebuild" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\cdistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="clib|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Rebuild="true" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'clib') and ('$(Platform)' == 'Win32') " />
+    <Message Text="The project &quot;cdistorm&quot; is not selected for building in solution configuration &quot;py23|Win32&quot;." Condition=" ('$(Configuration)' == 'py23') and ('$(Platform)' == 'Win32') " />
+    <Message Text="The project &quot;cdistorm&quot; is not selected for building in solution configuration &quot;py24|Win32&quot;." Condition=" ('$(Configuration)' == 'py24') and ('$(Platform)' == 'Win32') " />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\cdistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="clib|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Rebuild="true" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'py25') and ('$(Platform)' == 'Win32') " />
+  </Target>
+  <Target Name="cdistorm:Publish" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <Warning Text="VC projects do not support the &quot;Publish&quot; target." Code="MSB4076" HelpKeyword="MSBuild.SolutionVCProjectNoPublish" />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\cdistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="clib|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'clib') and ('$(Platform)' == 'Win32') " />
+    <Message Text="The project &quot;cdistorm&quot; is not selected for building in solution configuration &quot;py23|Win32&quot;." Condition=" ('$(Configuration)' == 'py23') and ('$(Platform)' == 'Win32') " />
+    <Message Text="The project &quot;cdistorm&quot; is not selected for building in solution configuration &quot;py24|Win32&quot;." Condition=" ('$(Configuration)' == 'py24') and ('$(Platform)' == 'Win32') " />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\cdistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="clib|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'py25') and ('$(Platform)' == 'Win32') " />
+  </Target>
+  <Target Name="pydistorm" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <Message Text="The project &quot;pydistorm&quot; is not selected for building in solution configuration &quot;clib|Win32&quot;." Condition=" ('$(Configuration)' == 'clib') and ('$(Platform)' == 'Win32') " />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\pydistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="py23|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'py23') and ('$(Platform)' == 'Win32') " />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\pydistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="py24|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'py24') and ('$(Platform)' == 'Win32') " />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\pydistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="py25|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'py25') and ('$(Platform)' == 'Win32') " />
+  </Target>
+  <Target Name="pydistorm:Clean" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <Message Text="The project &quot;pydistorm&quot; is not selected for building in solution configuration &quot;clib|Win32&quot;." Condition=" ('$(Configuration)' == 'clib') and ('$(Platform)' == 'Win32') " />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\pydistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="py23|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Clean="true" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'py23') and ('$(Platform)' == 'Win32') " />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\pydistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="py24|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Clean="true" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'py24') and ('$(Platform)' == 'Win32') " />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\pydistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="py25|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Clean="true" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'py25') and ('$(Platform)' == 'Win32') " />
+  </Target>
+  <Target Name="pydistorm:Rebuild" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <Message Text="The project &quot;pydistorm&quot; is not selected for building in solution configuration &quot;clib|Win32&quot;." Condition=" ('$(Configuration)' == 'clib') and ('$(Platform)' == 'Win32') " />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\pydistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="py23|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Rebuild="true" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'py23') and ('$(Platform)' == 'Win32') " />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\pydistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="py24|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Rebuild="true" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'py24') and ('$(Platform)' == 'Win32') " />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\pydistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="py25|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Rebuild="true" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'py25') and ('$(Platform)' == 'Win32') " />
+  </Target>
+  <Target Name="pydistorm:Publish" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <Warning Text="VC projects do not support the &quot;Publish&quot; target." Code="MSB4076" HelpKeyword="MSBuild.SolutionVCProjectNoPublish" />
+    <Message Text="The project &quot;pydistorm&quot; is not selected for building in solution configuration &quot;clib|Win32&quot;." Condition=" ('$(Configuration)' == 'clib') and ('$(Platform)' == 'Win32') " />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\pydistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="py23|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'py23') and ('$(Platform)' == 'Win32') " />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\pydistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="py24|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'py24') and ('$(Platform)' == 'Win32') " />
+    <CreateProperty Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages" Condition="'$(VCBuildToolPath)' == ''">
+      <Output TaskParameter="Value" PropertyName="VCBuildToolPath" />
+    </CreateProperty>
+    <VCBuild Projects="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\pydistorm.vcproj" ToolPath="$(VCBuildToolPath)" Configuration="py25|Win32" SolutionFile="C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" Override="$(VCBuildOverride)" AdditionalLibPaths="$(VCBuildAdditionalLibPaths)" UserEnvironment="$(VCBuildUserEnvironment)" AdditionalOptions="$(VCBuildAdditionalOptions)" Condition=" ('$(Configuration)' == 'py25') and ('$(Platform)' == 'Win32') " />
+  </Target>
+  <Target Name="Build" Condition="'$(CurrentSolutionConfigurationContents)' != ''" Outputs="@(CollectedBuildOutput)">
+    <MSBuild Condition="@(BuildLevel0) != ''" Projects="@(BuildLevel0)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+    <Message Text="The project &quot;%(SkipLevel0.Identity)&quot; is not selected for building in solution configuration &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel0) != ''" />
+    <Warning Text="The project configuration for project &quot;%(MissingConfigLevel0.Identity)&quot; was not specified in the solution file for the solution configuration &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel0) != ''" />
+    <CallTarget Targets="cdistorm;pydistorm" RunEachTargetSeparately="true" />
+  </Target>
+  <Target Name="Clean" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <MSBuild Condition="@(BuildLevel0) != ''" Projects="@(BuildLevel0)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" Targets="Clean" />
+    <Message Text="The project &quot;%(SkipLevel0.Identity)&quot; is not selected for building in solution configuration &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel0) != ''" />
+    <Warning Text="The project configuration for project &quot;%(MissingConfigLevel0.Identity)&quot; was not specified in the solution file for the solution configuration &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel0) != ''" />
+    <CallTarget Targets="cdistorm:Clean;pydistorm:Clean" RunEachTargetSeparately="true" />
+    <Delete Files="distorm.sln.cache" />
+  </Target>
+  <Target Name="Rebuild" Condition="'$(CurrentSolutionConfigurationContents)' != ''" Outputs="@(CollectedBuildOutput)">
+    <MSBuild Condition="@(BuildLevel0) != ''" Projects="@(BuildLevel0)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" Targets="Rebuild">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+    <Message Text="The project &quot;%(SkipLevel0.Identity)&quot; is not selected for building in solution configuration &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel0) != ''" />
+    <Warning Text="The project configuration for project &quot;%(MissingConfigLevel0.Identity)&quot; was not specified in the solution file for the solution configuration &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel0) != ''" />
+    <CallTarget Targets="cdistorm:Rebuild;pydistorm:Rebuild" RunEachTargetSeparately="true" />
+  </Target>
+  <Target Name="Publish" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <MSBuild Condition="@(BuildLevel0) != ''" Projects="@(BuildLevel0)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" Targets="Publish" />
+    <Message Text="The project &quot;%(SkipLevel0.Identity)&quot; is not selected for building in solution configuration &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel0) != ''" />
+    <Warning Text="The project configuration for project &quot;%(MissingConfigLevel0.Identity)&quot; was not specified in the solution file for the solution configuration &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel0) != ''" />
+    <CallTarget Targets="cdistorm:Publish;pydistorm:Publish" RunEachTargetSeparately="true" />
+  </Target>
+</Project>

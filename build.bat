@@ -1,0 +1,1 @@
+for /f "usebackq delims=" %%a in (`where /R . "*.sln"`) do msbuild /m "%%a"

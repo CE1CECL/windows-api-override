@@ -54,7 +54,7 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>G:\Program Files\XPDDK\inc\ddk\wxp;G:\Program Files\XPDDK\inc\wxp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\WinDDK\3790.1830\inc\ddk\wxp;C:\WinDDK\3790.1830\inc\wxp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_X86_;i386;STD_CALL;CONDITION_HANDLING;WIN32_LEAN_AND_MEAN;NT_UP;_IDWBUILD;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -79,7 +79,7 @@
       <AdditionalDependencies>ntoskrnl.lib;hal.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\Release\KernelMemoryAccess.sys</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>G:\Program Files\XPDDK\lib\wxp\i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\WinDDK\3790.1830\lib\wxp\i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ProgramDatabaseFile>.\Release/KernelMemoryAccess.pdb</ProgramDatabaseFile>
       <EntryPointSymbol>DriverEntry%408</EntryPointSymbol>
@@ -104,7 +104,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>G:\Program Files\XPDDK\inc\ddk\wxp;G:\Program Files\XPDDK\inc\wxp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\WinDDK\3790.1830\inc\ddk\wxp;C:\WinDDK\3790.1830\inc\wxp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEBUG;_X86_;i386;STD_CALL;CONDITION_HANDLING;WIN32_LEAN_AND_MEAN;NT_UP;RDRDBG;SRVDBG;DBG;_IDWBUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -127,7 +127,7 @@
       <AdditionalDependencies>ntoskrnl.lib;hal.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\Debug\KernelMemoryAccess.sys</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>G:\Program Files\XPDDK\lib\wxp\i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\WinDDK\3790.1830\lib\wxp\i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>.\Debug/KernelMemoryAccess.pdb</ProgramDatabaseFile>

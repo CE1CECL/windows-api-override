@@ -1,0 +1,2344 @@
+
+C:\Users\CE1CECL\windows-api-override>for /F "usebackq delims=" %a in (`where /R . "*.sln"`) do msbuild /m "%a"
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\Tools\DebugInfos\DebugInfosTest\DebugInfos.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:21 AM.
+     0>C:\Users\CE1CECL\windows-api-override\Tools\DebugInfos\DebugInfosTest\DebugInfos.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the latest v
+       ersion before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\DebugInfos\DebugInfosTest\DebugInfos.sln
+
+Build FAILED.
+
+         C:\Users\CE1CECL\windows-api-override\Tools\DebugInfos\DebugInfosTest\DebugInfos.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the latest
+        version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\DebugInfos\DebugInfosTest\DebugInfos.sln
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.01
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\Tools\DebugInfos\DiaSDK\Samples\DIA2Dump\dia2dump.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:21 AM.
+     0>C:\Users\CE1CECL\windows-api-override\Tools\DebugInfos\DiaSDK\Samples\DIA2Dump\dia2dump.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the l
+       atest version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\DebugInfos\DiaSDK\Samples\DIA2Dump\dia2dump.sln
+
+Build FAILED.
+
+         C:\Users\CE1CECL\windows-api-override\Tools\DebugInfos\DiaSDK\Samples\DIA2Dump\dia2dump.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the
+        latest version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\DebugInfos\DiaSDK\Samples\DIA2Dump\dia2dump.sln
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.01
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\cdistorm vs2003.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:21 AM.
+     0>C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\cdistorm vs2003.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the
+       latest version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\cdistorm vs2003.sln
+
+Build FAILED.
+
+         C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\cdistorm vs2003.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to th
+       e latest version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\cdistorm vs2003.sln
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.01
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:21 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "clib|Win32".
+       cdistorm:
+         C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages\VCBuild.exe C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\cdistorm.vcproj "clib|Win32"
+     1>vcbuild.exe : error VCBLD0010: Project 'C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\cdistorm.vcproj' requires upgrade. Use 'vcbuild /upgrade' or 'devenv /upgrade' to upgrade
+       the project. [C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln]
+       pydistorm:
+         The project "pydistorm" is not selected for building in solution configuration "clib|Win32".
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" (default targets) -- FAILED.
+
+Build FAILED.
+
+       "C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln" (default target) (1) ->
+       (cdistorm target) ->
+         vcbuild.exe : error VCBLD0010: Project 'C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\cdistorm.vcproj' requires upgrade. Use 'vcbuild /upgrade' or 'devenv /upgrade' to upgrad
+       e the project. [C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\build\win32\distorm.sln]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.19
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\win32proj\disasm.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:21 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\win32proj\disasm.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+       disasm:
+         C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\..\..\vc\vcpackages\VCBuild.exe C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\win32proj\disasm.vcproj "Debug|Win32"
+     1>vcbuild.exe : error VCBLD0010: Project 'C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\win32proj\disasm.vcproj' requires upgrade. Use 'vcbuild /upgrade' or 'devenv /upgrade' to upgrade the
+       project. [C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\win32proj\disasm.sln]
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\win32proj\disasm.sln" (default targets) -- FAILED.
+
+Build FAILED.
+
+       "C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\win32proj\disasm.sln" (default target) (1) ->
+       (disasm target) ->
+         vcbuild.exe : error VCBLD0010: Project 'C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\win32proj\disasm.vcproj' requires upgrade. Use 'vcbuild /upgrade' or 'devenv /upgrade' to upgrade th
+       e project. [C:\Users\CE1CECL\windows-api-override\Tools\Disasm\distorm64\win32proj\disasm.sln]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.19
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\Tools\KernelMemoryAccess\Src\KernelMemoryAccess.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:21 AM.
+     0>C:\Users\CE1CECL\windows-api-override\Tools\KernelMemoryAccess\Src\KernelMemoryAccess.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the lat
+       est version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\KernelMemoryAccess\Src\KernelMemoryAccess.sln
+
+Build FAILED.
+
+         C:\Users\CE1CECL\windows-api-override\Tools\KernelMemoryAccess\Src\KernelMemoryAccess.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the l
+       atest version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\KernelMemoryAccess\Src\KernelMemoryAccess.sln
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.01
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\Tools\Process\APIOverride\HookNet\HookNet.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:22 AM.
+     0>C:\Users\CE1CECL\windows-api-override\Tools\Process\APIOverride\HookNet\HookNet.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the latest ve
+       rsion before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\Process\APIOverride\HookNet\HookNet.sln
+
+Build FAILED.
+
+         C:\Users\CE1CECL\windows-api-override\Tools\Process\APIOverride\HookNet\HookNet.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the latest
+       version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\Process\APIOverride\HookNet\HookNet.sln
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.01
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\Tools\Process\APIOverride\IATLoader\IATLoader.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:22 AM.
+     0>C:\Users\CE1CECL\windows-api-override\Tools\Process\APIOverride\IATLoader\IATLoader.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the lates
+       t version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\Process\APIOverride\IATLoader\IATLoader.sln
+
+Build FAILED.
+
+         C:\Users\CE1CECL\windows-api-override\Tools\Process\APIOverride\IATLoader\IATLoader.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the lat
+       est version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\Process\APIOverride\IATLoader\IATLoader.sln
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.02
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\Tools\Process\InjLib\Src\injlib.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:22 AM.
+     0>C:\Users\CE1CECL\windows-api-override\Tools\Process\InjLib\Src\injlib.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the latest version befo
+       re it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\Process\InjLib\Src\injlib.sln
+
+Build FAILED.
+
+         C:\Users\CE1CECL\windows-api-override\Tools\Process\InjLib\Src\injlib.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the latest version be
+       fore it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\Process\InjLib\Src\injlib.sln
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.01
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\Tools\Process\ProcessMonitor\Src\ProcMon.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:22 AM.
+     0>C:\Users\CE1CECL\windows-api-override\Tools\Process\ProcessMonitor\Src\ProcMon.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the latest ver
+       sion before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\Process\ProcessMonitor\Src\ProcMon.sln
+
+Build FAILED.
+
+         C:\Users\CE1CECL\windows-api-override\Tools\Process\ProcessMonitor\Src\ProcMon.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the latest v
+       ersion before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\Process\ProcessMonitor\Src\ProcMon.sln
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.01
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\Tools\Process\SetEnvVarProc\src\SetEnvVarProc.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:22 AM.
+     0>C:\Users\CE1CECL\windows-api-override\Tools\Process\SetEnvVarProc\src\SetEnvVarProc.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the lates
+       t version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\Process\SetEnvVarProc\src\SetEnvVarProc.sln
+
+Build FAILED.
+
+         C:\Users\CE1CECL\windows-api-override\Tools\Process\SetEnvVarProc\src\SetEnvVarProc.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the lat
+       est version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\Tools\Process\SetEnvVarProc\src\SetEnvVarProc.sln
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.01
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\Tools\Process\x86CrossCompatibility\x86CrossCompatibilityBin\x86CrossCompatibility.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:22 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\Tools\Process\x86CrossCompatibility\x86CrossCompatibilityBin\x86CrossCompatibility.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\Tools\Process\x86CrossCompatibility\x86CrossCompatibilityBin\x86CrossCompatibility.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\Tools\Process
+       \x86CrossCompatibility\x86CrossCompatibilityBin\x86CrossCompatibility.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\x86CrossCompatibility.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\x86CrossCompatibility.unsuccessfulbuild".
+         Touching "Debug\x86CrossCompatibility.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\Tools\Process\x86CrossCompatibility\x86CrossCompatibilityBin\x86CrossCompatibility.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\Tools\Process\x86CrossCompatibility\x86CrossCompatibilityBin\x86CrossCompatibility.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.20
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\DllExportFinder\DllExportFinder.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:23 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\DllExportFinder\DllExportFinder.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\DllExportFinder\DllExportFinder.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\DllExportFinder\DllExp
+       ortFinder.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\DllExportFinder.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\DllExportFinder.unsuccessfulbuild".
+         Touching "Debug\DllExportFinder.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\DllExportFinder\DllExportFinder.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\DllExportFinder\DllExportFinder.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.19
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Dumper\Dumper.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:23 AM.
+     0>C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Dumper\Dumper.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the latest version b
+       efore it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Dumper\Dumper.sln
+
+Build FAILED.
+
+         C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Dumper\Dumper.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and converted to the latest version
+        before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Dumper\Dumper.sln
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.02
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Dumper\VS2010\Dumper.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:23 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Dumper\VS2010\Dumper.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Dumper\VS2010\Dumper.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Dumper\VS2010\Dumper.vcxproj" (2)
+        on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\Dumper.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\Dumper.unsuccessfulbuild".
+         Touching "Debug\Dumper.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Dumper\VS2010\Dumper.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Dumper\VS2010\Dumper.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.21
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\HeapWalker\HeapWalker.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:23 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\HeapWalker\HeapWalker.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\HeapWalker\HeapWalker.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\HeapWalker\HeapWalker.vcxproj" (
+       2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\HeapWalker.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\HeapWalker.unsuccessfulbuild".
+         Touching "Debug\HeapWalker.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\HeapWalker\HeapWalker.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\HeapWalker\HeapWalker.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.15
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:24 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Monitoring
+       FileBuilder\FindStackSizeByCall\FindStackSizeByCall.vcxproj" (3) on node 2 (default targets).
+     3>InitializeBuildStatus:
+         Creating "Debug\FindStackSizeByCall.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       PostBuildEvent:
+         copy "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\MonitoringFileBuilder\FindStackSizeByCall\Debug\FindStackSizeByCall.exe" "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Mon
+         itoringFileBuilder\resource\FindStackSizeByCall.exe"
+         :VCEnd
+                 1 file(s) copied.
+       FinalizeBuildStatus:
+         Deleting file "Debug\FindStackSizeByCall.unsuccessfulbuild".
+         Touching "Debug\FindStackSizeByCall.lastbuildstate".
+     3>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\MonitoringFileBuilder\FindStackSizeByCall\FindStackSizeByCall.vcxproj" (default targets).
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Monitoring
+       FileBuilder\MonitoringFileBuilder.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Touching "Debug\MonitoringFileBuilder.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _WINSOCKAPI_ /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar
+         _t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue ..\Tools\Network\Proxy.cpp ..\Tools\Network\TCP_Client.cpp MonitoringFileBuilder.cpp MonitoringFileBuilderUI.cpp O
+         nlineMsdnSearch.cpp main.cpp /EHa
+     2>cl : Command line warning D9025: overriding '/EHs' with '/EHa' [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+         main.cpp
+     2>c:\users\ce1cecl\windows-api-override\winapioverride32_src\monitoringfilebuilder\monitoringfilebuilderui.h(25): warning C4005: '_WINSOCKAPI_' : macro redefinition [C:\Users\CE1CECL\windows-api-override\w
+       inapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+                 command-line arguments :  see previous definition of '_WINSOCKAPI_'
+     2>c:\users\ce1cecl\windows-api-override\winapioverride32_src\tools\network\tcp_client.h(39): fatal error C1083: Cannot open include file: 'atlrx.h': No such file or directory [C:\Users\CE1CECL\windows-api-
+       override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+         OnlineMsdnSearch.cpp
+     2>c:\users\ce1cecl\windows-api-override\winapioverride32_src\tools\network\tcp_client.h(39): fatal error C1083: Cannot open include file: 'atlrx.h': No such file or directory [C:\Users\CE1CECL\windows-api-
+       override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+         MonitoringFileBuilderUI.cpp
+     2>c:\users\ce1cecl\windows-api-override\winapioverride32_src\monitoringfilebuilder\monitoringfilebuilderui.h(25): warning C4005: '_WINSOCKAPI_' : macro redefinition [C:\Users\CE1CECL\windows-api-override\w
+       inapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+                 command-line arguments :  see previous definition of '_WINSOCKAPI_'
+     2>c:\users\ce1cecl\windows-api-override\winapioverride32_src\tools\network\tcp_client.h(39): fatal error C1083: Cannot open include file: 'atlrx.h': No such file or directory [C:\Users\CE1CECL\windows-api-
+       override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+         MonitoringFileBuilder.cpp
+     2>c:\users\ce1cecl\windows-api-override\winapioverride32_src\tools\network\tcp_client.h(39): fatal error C1083: Cannot open include file: 'atlrx.h': No such file or directory [C:\Users\CE1CECL\windows-api-
+       override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+         TCP_Client.cpp
+         c:\users\ce1cecl\windows-api-override\winapioverride32_src\tools\network\tcp_client.cpp Information : Include TCP_Client.h before including windows.h, or use _WINSOCKAPI_ preprocessor define
+
+
+     2>c:\users\ce1cecl\windows-api-override\winapioverride32_src\tools\network\tcp_client.h(39): fatal error C1083: Cannot open include file: 'atlrx.h': No such file or directory [C:\Users\CE1CECL\windows-api-
+       override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+         Proxy.cpp
+         c:\users\ce1cecl\windows-api-override\winapioverride32_src\tools\network\proxy.cpp Information : Include Proxy.h before including windows.h, or use _WINSOCKAPI_ preprocessor define
+     2>c:\users\ce1cecl\windows-api-override\winapioverride32_src\tools\network\tcp_client.h(39): fatal error C1083: Cannot open include file: 'atlrx.h': No such file or directory [C:\Users\CE1CECL\windows-api-
+       override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+         Generating Code...
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj" (default targets) -- FAILED.
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.sln" (default targets) -- FAILED.
+
+Build FAILED.
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj" (default target) (2) ->
+       (ClCompile target) ->
+         cl : Command line warning D9025: overriding '/EHs' with '/EHa' [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+         c:\users\ce1cecl\windows-api-override\winapioverride32_src\monitoringfilebuilder\monitoringfilebuilderui.h(25): warning C4005: '_WINSOCKAPI_' : macro redefinition [C:\Users\CE1CECL\windows-api-override
+       \winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+         c:\users\ce1cecl\windows-api-override\winapioverride32_src\monitoringfilebuilder\monitoringfilebuilderui.h(25): warning C4005: '_WINSOCKAPI_' : macro redefinition [C:\Users\CE1CECL\windows-api-override
+       \winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj" (default target) (2) ->
+       (ClCompile target) ->
+         c:\users\ce1cecl\windows-api-override\winapioverride32_src\tools\network\tcp_client.h(39): fatal error C1083: Cannot open include file: 'atlrx.h': No such file or directory [C:\Users\CE1CECL\windows-ap
+       i-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+         c:\users\ce1cecl\windows-api-override\winapioverride32_src\tools\network\tcp_client.h(39): fatal error C1083: Cannot open include file: 'atlrx.h': No such file or directory [C:\Users\CE1CECL\windows-ap
+       i-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+         c:\users\ce1cecl\windows-api-override\winapioverride32_src\tools\network\tcp_client.h(39): fatal error C1083: Cannot open include file: 'atlrx.h': No such file or directory [C:\Users\CE1CECL\windows-ap
+       i-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+         c:\users\ce1cecl\windows-api-override\winapioverride32_src\tools\network\tcp_client.h(39): fatal error C1083: Cannot open include file: 'atlrx.h': No such file or directory [C:\Users\CE1CECL\windows-ap
+       i-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+         c:\users\ce1cecl\windows-api-override\winapioverride32_src\tools\network\tcp_client.h(39): fatal error C1083: Cannot open include file: 'atlrx.h': No such file or directory [C:\Users\CE1CECL\windows-ap
+       i-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+         c:\users\ce1cecl\windows-api-override\winapioverride32_src\tools\network\tcp_client.h(39): fatal error C1083: Cannot open include file: 'atlrx.h': No such file or directory [C:\Users\CE1CECL\windows-ap
+       i-override\winapioverride32_src\MonitoringFileBuilder\MonitoringFileBuilder.vcxproj]
+
+    3 Warning(s)
+    6 Error(s)
+
+Time Elapsed 00:00:04.07
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\StaticImportFinder\StaticImportFinder.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:28 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\StaticImportFinder\StaticImportFinder.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\StaticImportFinder\StaticImportFinder.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\StaticImportFind
+       er\StaticImportFinder.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\StaticImportFinder.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\StaticImportFinder.unsuccessfulbuild".
+         Touching "Debug\StaticImportFinder.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\StaticImportFinder\StaticImportFinder.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\StaticImportFinder\StaticImportFinder.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.16
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\StubResolver\StubResolver.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:28 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\StubResolver\StubResolver.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\StubResolver\StubResolver.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\StubResolver\StubResolver.vc
+       xproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\StubResolver.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\StubResolver.unsuccessfulbuild".
+         Touching "Debug\StubResolver.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\StubResolver\StubResolver.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\StubResolver\StubResolver.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.15
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\DebugInfos\DebugInfosTest\DebugInfos.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:28 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\DebugInfos\DebugInfosTest\DebugInfos.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\DebugInfos\DebugInfosTest\DebugInfos.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Debug
+       Infos\DebugInfosTest\DebugInfos.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Touching "Debug\DebugInfosViewer.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"Debug\DebugInfosViewer.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib
+          advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\DebugInfosViewer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='fa
+         lse'" /DEBUG /PDB:"Debug\DebugInfos.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\DebugInfosViewer.lib" /MACHINE:X86 Debug\DebugInfos.res
+         Debug\DebugInfosViewer.exe.embed.manifest.res
+         Debug\about.obj
+         Debug\DebugInfos.obj
+         Debug\DebugInfosUI.obj
+         Debug\FunctionBlockInfos.obj
+         Debug\FunctionInfos.obj
+         Debug\LabelInfos.obj
+         Debug\main.obj
+         Debug\ModuleInfos.obj
+         Debug\regs.obj
+         Debug\SymbolLocation.obj
+         Debug\ThunkInfos.obj
+         Debug\TypeInfos.obj
+         Debug\UserTypesGenerator.obj
+         Debug\AnsiUnicodeConvert.obj
+         Debug\APIError.obj
+         Debug\Clipboard.obj
+         Debug\DialogHelper.obj
+         Debug\Disasm.obj
+         Debug\DllFinder.obj
+         Debug\DllSideBySideAssembyFinder.obj
+         Debug\HtmlViewerWindow.obj
+         Debug\LinkList.obj
+         Debug\LinkListBase.obj
+         Debug\LinkListBaseSingleThreaded.obj
+         Debug\LinkListSimple.obj
+         Debug\LinkListSimpleSingleThreaded.obj
+         Debug\LinkListTemplate.obj
+         Debug\PE.obj
+         Debug\PeManifestAssembly.obj
+         Debug\PopUpMenu.obj
+         Debug\RegisterComComponent.obj
+         Debug\StdFileOperations.obj
+         Debug\StringConverter.obj
+         Debug\StringReplace.obj
+         Debug\SysLink.obj
+         Debug\TextFile.obj
+         Debug\Toolbar.obj
+         Debug\Treeview.obj
+         Debug\TrimString.obj
+         Debug\Version.obj
+         Debug\WildCharCompare.obj
+     2>LINK : fatal error LNK1104: cannot open file '../../Disasm/distorm64/distorm_debug.lib' [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\DebugInfos\DebugInfosTest\DebugInfos.vcxproj]
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\DebugInfos\DebugInfosTest\DebugInfos.vcxproj" (default targets) -- FAILED.
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\DebugInfos\DebugInfosTest\DebugInfos.sln" (default targets) -- FAILED.
+
+Build FAILED.
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\DebugInfos\DebugInfosTest\DebugInfos.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\DebugInfos\DebugInfosTest\DebugInfos.vcxproj" (default target) (2) ->
+       (Link target) ->
+         LINK : fatal error LNK1104: cannot open file '../../Disasm/distorm64/distorm_debug.lib' [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\DebugInfos\DebugInfosTest\DebugInfos.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.28
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\DebugInfos\DiaSDK\Samples\DIA2Dump\dia2dump.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:29 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\DebugInfos\DiaSDK\Samples\DIA2Dump\dia2dump.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\DebugInfos\DiaSDK\Samples\DIA2Dump\dia2dump.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tool
+       s\DebugInfos\DiaSDK\Samples\DIA2Dump\Dia2Dump.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\Dia2Dump.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\Dia2Dump.unsuccessfulbuild".
+         Touching "Debug\Dia2Dump.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\DebugInfos\DiaSDK\Samples\DIA2Dump\Dia2Dump.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\DebugInfos\DiaSDK\Samples\DIA2Dump\dia2dump.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.14
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build\win32\cdistorm vs2003.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:29 AM.
+     0>C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build\win32\cdistorm vs2003.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE
+       and converted to the latest version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build\win32\cdistorm vs2003.sln
+
+Build FAILED.
+
+         C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build\win32\cdistorm vs2003.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio ID
+       E and converted to the latest version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build\win32\cdistorm vs2003.sln
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.01
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build\win32\distorm.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:29 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build\win32\distorm.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "clib|Win32".
+       ValidateProjects:
+         The project "pydistorm" is not selected for building in solution configuration "clib|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build\win32\distorm.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disas
+       m\distorm64\build\win32\cdistorm.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "clib\cdistorm.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+     2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build\w
+       in32\clib\cdistorm.lib) does not match the Library's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\distorm.lib). This may cause your project
+        to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile). [C:\Users\CE1CECL\windows-api-overr
+       ide\winapioverride32_src\Tools\Disasm\distorm64\build\win32\cdistorm.vcxproj]
+     2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1153,5): warning MSB8012: TargetName(cdistorm) does not match the Library's OutputFile property value (distorm). This may caus
+       e your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile). [C:\Users\CE1CECL\win
+       dows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build\win32\cdistorm.vcxproj]
+       Lib:
+         All outputs are up-to-date.
+         cdistorm.vcxproj -> C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build\win32\clib\cdistorm.lib
+       FinalizeBuildStatus:
+         Deleting file "clib\cdistorm.unsuccessfulbuild".
+         Touching "clib\cdistorm.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build\win32\cdistorm.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build\win32\distorm.sln" (default targets).
+
+Build succeeded.
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build\win32\distorm.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build\win32\cdistorm.vcxproj" (default target) (2) ->
+       (DoLibOutputFilesMatch target) ->
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build
+       \win32\clib\cdistorm.lib) does not match the Library's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\distorm.lib). This may cause your proje
+       ct to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile). [C:\Users\CE1CECL\windows-api-ove
+       rride\winapioverride32_src\Tools\Disasm\distorm64\build\win32\cdistorm.vcxproj]
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1153,5): warning MSB8012: TargetName(cdistorm) does not match the Library's OutputFile property value (distorm). This may ca
+       use your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile). [C:\Users\CE1CECL\w
+       indows-api-override\winapioverride32_src\Tools\Disasm\distorm64\build\win32\cdistorm.vcxproj]
+
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.14
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\win32proj\disasm.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:29 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\win32proj\disasm.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\win32proj\disasm.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\d
+       istorm64\win32proj\disasm.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\disasm.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\disasm.unsuccessfulbuild".
+         Touching "Debug\disasm.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\win32proj\disasm.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Disasm\distorm64\win32proj\disasm.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.14
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\KernelMemoryAccess\Src\KernelMemoryAccess.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:30 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\KernelMemoryAccess\Src\KernelMemoryAccess.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\KernelMemoryAccess\Src\KernelMemoryAccess.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\
+       KernelMemoryAccess\Src\KernelMemoryAccess.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating ".\Debug\KernelMemoryAccess.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+     2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\KernelMemoryAccess\Src\.\
+       Debug\KernelMemoryAccess.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\KernelMemoryAccess\Src\Debug\KernelMemoryAccess.sys).
+        This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Us
+       ers\CE1CECL\windows-api-override\winapioverride32_src\Tools\KernelMemoryAccess\Src\KernelMemoryAccess.vcxproj]
+     2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(991,5): warning MSB8012: TargetExt(.dll) does not match the Linker's OutputFile property value (.sys). This may cause your pro
+       ject to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\windows-api-
+       override\winapioverride32_src\Tools\KernelMemoryAccess\Src\KernelMemoryAccess.vcxproj]
+       Link:
+         All outputs are up-to-date.
+         KernelMemoryAccess.vcxproj -> C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\KernelMemoryAccess\Src\.\Debug\KernelMemoryAccess.dll
+       BscMake:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file ".\Debug\KernelMemoryAccess.unsuccessfulbuild".
+         Touching ".\Debug\KernelMemoryAccess.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\KernelMemoryAccess\Src\KernelMemoryAccess.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\KernelMemoryAccess\Src\KernelMemoryAccess.sln" (default targets).
+
+Build succeeded.
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\KernelMemoryAccess\Src\KernelMemoryAccess.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\KernelMemoryAccess\Src\KernelMemoryAccess.vcxproj" (default target) (2) ->
+       (DoLinkOutputFilesMatch target) ->
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\KernelMemoryAccess\Src\
+       .\Debug\KernelMemoryAccess.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\KernelMemoryAccess\Src\Debug\KernelMemoryAccess.sys
+       ). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\
+       Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\KernelMemoryAccess\Src\KernelMemoryAccess.vcxproj]
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(991,5): warning MSB8012: TargetExt(.dll) does not match the Linker's OutputFile property value (.sys). This may cause your p
+       roject to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\windows-ap
+       i-override\winapioverride32_src\Tools\KernelMemoryAccess\Src\KernelMemoryAccess.vcxproj]
+
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.14
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\HookNet\HookNet.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:30 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\HookNet\HookNet.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\HookNet\HookNet.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Proces
+       s\APIOverride\HookNet\HookNet.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Touching "Debug\HookNet.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"Debug\HookNet.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32
+         .lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\HookNet.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:
+         "Debug\HookNet.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /BASE:"0x1D000000" /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\HookNet.lib" /MACHINE:X86 /DLL Debug\HookNet.res
+         Debug\HookNet.dll.embed.manifest.res
+         Debug\ComStuff.obj
+         Debug\DisplayAsm.obj
+         Debug\FunctionInfo.obj
+         Debug\FunctionInfoEx.obj
+         Debug\HookNet.obj
+         Debug\NetInteraction.obj
+         Debug\NetProfiler.obj
+         Debug\NetProfilerClassFactory.obj
+         Debug\Options.obj
+         Debug\ParameterInfo.obj
+         Debug\AnsiUnicodeConvert.obj
+         Debug\APIError.obj
+         Debug\Clipboard.obj
+         Debug\DialogHelper.obj
+         Debug\Disasm.obj
+         Debug\ExpressionParser.obj
+         Debug\LinkList.obj
+         Debug\LinkListBase.obj
+         Debug\LinkListBaseSingleThreaded.obj
+         Debug\LinkListSimple.obj
+         Debug\LinkListSimpleSingleThreaded.obj
+         Debug\LinkListSingleThreaded.obj
+         Debug\Listview.obj
+         Debug\MailSlotClient.obj
+         Debug\PopUpMenu.obj
+         Debug\SecureTcscat.obj
+         Debug\StdFileOperations.obj
+         Debug\StringConverter.obj
+         Debug\SupportedParameters.obj
+         Debug\TextFile.obj
+         Debug\Toolbar.obj
+         Debug\TrimString.obj
+         Debug\UserDataType.obj
+         Debug\UserDataTypeVar.obj
+         Debug\UserDefine.obj
+     2>LINK : fatal error LNK1104: cannot open file '../../../Disasm/distorm64/distorm_debug.lib' [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\HookNet\HookNet.vcxproj]
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\HookNet\HookNet.vcxproj" (default targets) -- FAILED.
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\HookNet\HookNet.sln" (default targets) -- FAILED.
+
+Build FAILED.
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\HookNet\HookNet.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\HookNet\HookNet.vcxproj" (default target) (2) ->
+       (Link target) ->
+         LINK : fatal error LNK1104: cannot open file '../../../Disasm/distorm64/distorm_debug.lib' [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\HookNet\HookNet.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.27
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\IATLoader\IATLoader.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:30 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\IATLoader\IATLoader.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\IATLoader\IATLoader.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Pr
+       ocess\APIOverride\IATLoader\IATLoader.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\IATLoader.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\IATLoader.unsuccessfulbuild".
+         Touching "Debug\IATLoader.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\IATLoader\IATLoader.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\IATLoader\IATLoader.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.14
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\injlib.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:31 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\injlib.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\injlib.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\S
+       rc\Lib\injlib.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\injlib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Lib:
+         All outputs are up-to-date.
+         injlib.vcxproj -> C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\Lib\Debug\injlib.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\injlib.unsuccessfulbuild".
+         Touching "Debug\injlib.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\Lib\injlib.vcxproj" (default targets).
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\injlib.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\S
+       rc\exe\InjectLib.vcxproj" (3) on node 3 (default targets).
+     3>InitializeBuildStatus:
+         Touching "Debug\InjectLibSample.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+     3>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\exe\De
+       bug\InjectLibSample.exe) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\exe\Debug\InjectLib.exe). This may caus
+       e your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\wi
+       ndows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\exe\InjectLib.vcxproj]
+     3>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(InjectLibSample) does not match the Linker's OutputFile property value (InjectLib). This m
+       ay cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Users\CE1
+       CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\exe\InjectLib.vcxproj]
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"Debug\InjectLib.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi
+         32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\InjectLibSample.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /D
+         EBUG /PDB:"Debug\InjectLib.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\InjectLibSample.lib" /MACHINE:X86 Debug\InjLib.res
+         Debug\InjectLibSample.exe.embed.manifest.res
+         Debug\main.obj
+         "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\Lib\Debug\injlib.lib"
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\injlib.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\S
+       rc\DLL\InjLibDLL.vcxproj" (4) on node 2 (default targets).
+     4>InitializeBuildStatus:
+         Creating "Debug\InjLibDLL.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+     4>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\De
+       bug\InjLibDLL.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\Debug\InjLib.dll). This may cause your pr
+       oject to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\windows-api
+       -override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\InjLibDLL.vcxproj]
+     4>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(InjLibDLL) does not match the Linker's OutputFile property value (InjLib). This may cause
+       your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\wind
+       ows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\InjLibDLL.vcxproj]
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\InjLibDLL.unsuccessfulbuild".
+         Touching "Debug\InjLibDLL.lastbuildstate".
+     4>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\InjLibDLL.vcxproj" (default targets).
+     3>LINK : fatal error LNK1104: cannot open file '../lib/Release/injlib.lib' [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\exe\InjectLib.vcxproj]
+     3>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\exe\InjectLib.vcxproj" (default targets) -- FAILED.
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\injlib.sln" (default targets) -- FAILED.
+
+Build FAILED.
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\injlib.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\exe\InjectLib.vcxproj" (default target) (3) ->
+       (DoLinkOutputFilesMatch target) ->
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\exe\
+       Debug\InjectLibSample.exe) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\exe\Debug\InjectLib.exe). This may ca
+       use your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\
+       windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\exe\InjectLib.vcxproj]
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(InjectLibSample) does not match the Linker's OutputFile property value (InjectLib). This
+        may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Users\C
+       E1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\exe\InjectLib.vcxproj]
+
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\injlib.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\InjLibDLL.vcxproj" (default target) (4) ->
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\
+       Debug\InjLibDLL.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\Debug\InjLib.dll). This may cause your
+       project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\windows-a
+       pi-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\InjLibDLL.vcxproj]
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(InjLibDLL) does not match the Linker's OutputFile property value (InjLib). This may caus
+       e your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\wi
+       ndows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\InjLibDLL.vcxproj]
+
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\injlib.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\exe\InjectLib.vcxproj" (default target) (3) ->
+       (Link target) ->
+         LINK : fatal error LNK1104: cannot open file '../lib/Release/injlib.lib' [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\exe\InjectLib.vcxproj]
+
+    4 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.47
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMon.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:31 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMon.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMon.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process
+       \ProcessMonitor\Src\ProcMon\ProcMon.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating ".\Debug\ProcMon.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+     2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Sr
+       c\ProcMon\.\Debug\ProcMon.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMon\Debug\ProcMon.sys
+       ). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\
+       Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMon\ProcMon.vcxproj]
+     2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(991,5): warning MSB8012: TargetExt(.dll) does not match the Linker's OutputFile property value (.sys). This may cause your pro
+       ject to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\windows-api-
+       override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMon\ProcMon.vcxproj]
+       Link:
+         All outputs are up-to-date.
+         ProcMon.vcxproj -> C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMon\.\Debug\ProcMon.dll
+       BscMake:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file ".\Debug\ProcMon.unsuccessfulbuild".
+         Touching ".\Debug\ProcMon.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMon\ProcMon.vcxproj" (default targets).
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMon.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process
+       \ProcessMonitor\Src\ProcMonUI\ProcMonUI.vcxproj" (3) on node 2 (default targets).
+     3>InitializeBuildStatus:
+         Creating "Debug\ProcMonUI.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\ProcMonUI.unsuccessfulbuild".
+         Touching "Debug\ProcMonUI.lastbuildstate".
+     3>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMonUI\ProcMonUI.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMon.sln" (default targets).
+
+Build succeeded.
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMon.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMon\ProcMon.vcxproj" (default target) (2) ->
+       (DoLinkOutputFilesMatch target) ->
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\
+       Src\ProcMon\.\Debug\ProcMon.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMon\Debug\ProcMon.s
+       ys). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C
+       :\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMon\ProcMon.vcxproj]
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(991,5): warning MSB8012: TargetExt(.dll) does not match the Linker's OutputFile property value (.sys). This may cause your p
+       roject to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\windows-ap
+       i-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMon\ProcMon.vcxproj]
+
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.32
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMonUI\ProcMonUI.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:32 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMonUI\ProcMonUI.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMonUI\ProcMonUI.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\T
+       ools\Process\ProcessMonitor\Src\ProcMonUI\ProcMonUI.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\ProcMonUI.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\ProcMonUI.unsuccessfulbuild".
+         Touching "Debug\ProcMonUI.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMonUI\ProcMonUI.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\ProcessMonitor\Src\ProcMonUI\ProcMonUI.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.13
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\SetEnvVarProc\src\SetEnvVarProc.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:32 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\SetEnvVarProc\src\SetEnvVarProc.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\SetEnvVarProc\src\SetEnvVarProc.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Pr
+       ocess\SetEnvVarProc\src\SetEnvVarProc.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\SetEnvVarProc.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\SetEnvVarProc.unsuccessfulbuild".
+         Touching "Debug\SetEnvVarProc.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\SetEnvVarProc\src\SetEnvVarProc.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\SetEnvVarProc\src\SetEnvVarProc.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.13
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\x86CrossCompatibility\x86CrossCompatibilityBin\x86CrossCompatibility.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:32 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\x86CrossCompatibility\x86CrossCompatibilityBin\x86CrossCompatibility.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\x86CrossCompatibility\x86CrossCompatibilityBin\x86CrossCompatibility.sln" (1) is building "C:\Users\CE1CECL\windows-api-o
+       verride\winapioverride32_src\Tools\Process\x86CrossCompatibility\x86CrossCompatibilityBin\x86CrossCompatibility.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\x86CrossCompatibility.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\x86CrossCompatibility.unsuccessfulbuild".
+         Touching "Debug\x86CrossCompatibility.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\x86CrossCompatibility\x86CrossCompatibilityBin\x86CrossCompatibility.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\x86CrossCompatibility\x86CrossCompatibilityBin\x86CrossCompatibility.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.17
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\APIOverride.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:32 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\APIOverride.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\APIOverride.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\WinAPIOv
+       erride32.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\WinAPIOverride32.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\APIOverride.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride
+       \IATLoader\IATLoader.vcxproj" (3) on node 2 (default targets).
+     3>InitializeBuildStatus:
+         Creating "Debug\IATLoader.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\APIOverride.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride
+       \HookNet\HookNet.vcxproj" (4) on node 3 (default targets).
+     4>InitializeBuildStatus:
+         Touching "Debug\HookNet.unsuccessfulbuild".
+     2>Link:
+         All outputs are up-to-date.
+     3>Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\IATLoader.unsuccessfulbuild".
+         Touching "Debug\IATLoader.lastbuildstate".
+     3>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\IATLoader\IATLoader.vcxproj" (default targets).
+     2>Manifest:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\WinAPIOverride32.unsuccessfulbuild".
+         Touching "Debug\WinAPIOverride32.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\WinAPIOverride32.vcxproj" (default targets).
+     4>ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"Debug\HookNet.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32
+         .lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\HookNet.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:
+         "Debug\HookNet.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /BASE:"0x1D000000" /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\HookNet.lib" /MACHINE:X86 /DLL Debug\HookNet.res
+         Debug\HookNet.dll.embed.manifest.res
+         Debug\ComStuff.obj
+         Debug\DisplayAsm.obj
+         Debug\FunctionInfo.obj
+         Debug\FunctionInfoEx.obj
+         Debug\HookNet.obj
+         Debug\NetInteraction.obj
+         Debug\NetProfiler.obj
+         Debug\NetProfilerClassFactory.obj
+         Debug\Options.obj
+         Debug\ParameterInfo.obj
+         Debug\AnsiUnicodeConvert.obj
+         Debug\APIError.obj
+         Debug\Clipboard.obj
+         Debug\DialogHelper.obj
+         Debug\Disasm.obj
+         Debug\ExpressionParser.obj
+         Debug\LinkList.obj
+         Debug\LinkListBase.obj
+         Debug\LinkListBaseSingleThreaded.obj
+         Debug\LinkListSimple.obj
+         Debug\LinkListSimpleSingleThreaded.obj
+         Debug\LinkListSingleThreaded.obj
+         Debug\Listview.obj
+         Debug\MailSlotClient.obj
+         Debug\PopUpMenu.obj
+         Debug\SecureTcscat.obj
+         Debug\StdFileOperations.obj
+         Debug\StringConverter.obj
+         Debug\SupportedParameters.obj
+         Debug\TextFile.obj
+         Debug\Toolbar.obj
+         Debug\TrimString.obj
+         Debug\UserDataType.obj
+         Debug\UserDataTypeVar.obj
+         Debug\UserDefine.obj
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\APIOverride.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride
+       \injected_dll\APIOverride_InjectedDLL.vcxproj" (5) on node 4 (default targets).
+     5>InitializeBuildStatus:
+         Creating "Debug\APIOverride_InjectedDLL.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       PreBuildEvent:
+         MakeAsm.bat
+         :VCEnd
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\APIOverride.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\
+       DLL\InjLibDLL.vcxproj" (6) on node 5 (default targets).
+     6>InitializeBuildStatus:
+         Creating "Debug\InjLibDLL.unsuccessfulbuild" because "AlwaysCreate" was specified.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\APIOverride.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride
+       \HookCom\HookCom.vcxproj" (7) on node 6 (default targets).
+     7>InitializeBuildStatus:
+         Creating "Debug\HookCom.unsuccessfulbuild" because "AlwaysCreate" was specified.
+     6>ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+     6>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\De
+       bug\InjLibDLL.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\Debug\InjLib.dll). This may cause your pr
+       oject to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\windows-api
+       -override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\InjLibDLL.vcxproj]
+     6>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(InjLibDLL) does not match the Linker's OutputFile property value (InjLib). This may cause
+       your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\wind
+       ows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\InjLibDLL.vcxproj]
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\InjLibDLL.unsuccessfulbuild".
+         Touching "Debug\InjLibDLL.lastbuildstate".
+     6>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\InjLibDLL.vcxproj" (default targets).
+     7>ClCompile:
+         All outputs are up-to-date.
+     4>LINK : fatal error LNK1104: cannot open file '../../../Disasm/distorm64/distorm_debug.lib' [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\HookNet\HookNet.vcxproj]
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+     4>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\HookNet\HookNet.vcxproj" (default targets) -- FAILED.
+     7>Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\HookCom.unsuccessfulbuild".
+         Touching "Debug\HookCom.lastbuildstate".
+     7>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\HookCom\HookCom.vcxproj" (default targets).
+     5>PreBuildEvent:
+          Assembling: safeseh.asm
+          Assembling: ApiSubstitutions.asm
+         Microsoft (R) Macro Assembler Version 10.00.40219.01
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+     5>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\injec
+       ted_dll\Debug\APIOverride_InjectedDLL.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\injected_dll\Debug\A
+       PIOverride.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.Out
+       putFile). [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\injected_dll\APIOverride_InjectedDLL.vcxproj]
+     5>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(APIOverride_InjectedDLL) does not match the Linker's OutputFile property value (APIOverrid
+       e). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:
+       \Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\injected_dll\APIOverride_InjectedDLL.vcxproj]
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"Debug\APIOverride.dll" /INCREMENTAL /NOLOGO safeseh.obj ApiSubstitutions.obj kernel32.lib user32.lib gdi32.l
+         ib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\APIOverride_InjectedDLL.dll.intermediate.manifest" /MANIFEST
+         UAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"Debug\APIOverride.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /BASE:"0x1F000000" /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\APIOverride.lib" /MACHINE:X86 /DLL Debu
+         g\APIOverride_InjectedDLL.res
+         Debug\APIOverride_InjectedDLL.dll.embed.manifest.res
+         Debug\ApiInfo.obj
+         Debug\APIMonitoringFileLoader.obj
+         Debug\APIOverrideKernel.obj
+         Debug\BreakUserInterface.obj
+         Debug\CallStackUserInterface.obj
+         Debug\COM_Manager.obj
+         Debug\DialogInterfaceManager.obj
+         Debug\DumpUserInterface.obj
+         Debug\DynamicLoadedFuncs.obj
+         Debug\FakeApiLoader.obj
+         Debug\LogAPI.obj
+         Debug\main.obj
+         Debug\MemoryUserInterface.obj
+         Debug\ModuleFilters.obj
+         Debug\NET_Manager.obj
+         Debug\ProcessInternalCallRequest.obj
+         Debug\QueryFakingOwnerShip.obj
+         Debug\QueryMonitoringOwnerShip.obj
+         Debug\RegistersUserInterface.obj
+         Debug\ReportMessage.obj
+         Debug\SetUserWindowStation.obj
+         Debug\AnsiUnicodeConvert.obj
+         Debug\APIError.obj
+         Debug\ApiOverrideFuncAndParams.obj
+         Debug\CallInstructionSizeFromRetAddress.obj
+         Debug\CleanCloseHandle.obj
+         Debug\CSingleInstance.obj
+         Debug\DllFinder.obj
+         Debug\DllSideBySideAssembyFinder.obj
+         Debug\DllStub.obj
+         Debug\DynamicMessageBox.obj
+         Debug\ExpressionParser.obj
+         Debug\HardwareException.obj
+         Debug\HookAvailabilityCheck.obj
+         Debug\LengthDisasm.obj
+         Debug\LengthDisasm32.obj
+         Debug\LinkList.obj
+         Debug\LinkListBase.obj
+         Debug\LinkListSimple.obj
+         Debug\LinkListSimpleSingleThreaded.obj
+         Debug\LinkListSingleThreaded.obj
+         Debug\MailSlotClient.obj
+         Debug\MailSlotServer.obj
+         Debug\OsVersion.obj
+         Debug\PE.obj
+         Debug\PeManifestAssembly.obj
+         Debug\ProcessAndThreadID.obj
+         Debug\ProcessHelper.obj
+         Debug\SecureTcscat.obj
+         Debug\StdFileOperations.obj
+         Debug\StringConverter.obj
+         Debug\StrToHex.obj
+         Debug\SupportedParameters.obj
+         Debug\TextFile.obj
+         Debug\ThreadContext.obj
+         Debug\TrimString.obj
+         Debug\UserDataType.obj
+         Debug\UserDataTypeVar.obj
+         Debug\UserDefine.obj
+         Debug\WildCharCompare.obj
+         Debug\LinkListBaseSingleThreaded.obj
+         Debug\ProcessMemory.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\APIOverride_InjectedDLL.dll.embed.manifest" /manifest Debug\APIOverride_InjectedDLL.dll.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         APIOverride_InjectedDLL.vcxproj -> C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\injected_dll\Debug\APIOverride_InjectedDLL.dll
+       FinalizeBuildStatus:
+         Deleting file "Debug\APIOverride_InjectedDLL.unsuccessfulbuild".
+         Touching "Debug\APIOverride_InjectedDLL.lastbuildstate".
+     5>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\injected_dll\APIOverride_InjectedDLL.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\APIOverride.sln" (default targets) -- FAILED.
+
+Build FAILED.
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\APIOverride.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\InjLibDLL.vcxproj" (default target) (6) ->
+       (DoLinkOutputFilesMatch target) ->
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\
+       Debug\InjLibDLL.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\Debug\InjLib.dll). This may cause your
+       project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\windows-a
+       pi-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\InjLibDLL.vcxproj]
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(InjLibDLL) does not match the Linker's OutputFile property value (InjLib). This may caus
+       e your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\wi
+       ndows-api-override\winapioverride32_src\Tools\Process\InjLib\Src\DLL\InjLibDLL.vcxproj]
+
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\APIOverride.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\injected_dll\APIOverride_InjectedDLL.vcxproj" (default target) (5) ->
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\inj
+       ected_dll\Debug\APIOverride_InjectedDLL.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\injected_dll\Debug
+       \APIOverride.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.O
+       utputFile). [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\injected_dll\APIOverride_InjectedDLL.vcxproj]
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(APIOverride_InjectedDLL) does not match the Linker's OutputFile property value (APIOverr
+       ide). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [
+       C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\injected_dll\APIOverride_InjectedDLL.vcxproj]
+
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\APIOverride.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\HookNet\HookNet.vcxproj" (default target) (4) ->
+       (Link target) ->
+         LINK : fatal error LNK1104: cannot open file '../../../Disasm/distorm64/distorm_debug.lib' [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\Tools\Process\APIOverride\HookNet\HookNet.vcxproj]
+
+    4 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:01.24
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\_lib\WinApiOverrideLib.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:34 AM.
+     0>C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\_lib\WinApiOverrideLib.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and convert
+       ed to the latest version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\_lib\WinApiOverrideLib.sln
+
+Build FAILED.
+
+         C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\_lib\WinApiOverrideLib.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE and conve
+       rted to the latest version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\winapioverride32_src\WinAPIOverride32\_lib\WinApiOverrideLib.sln
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.01
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\ExeInternal (with target sample)\FakeExeInternal.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:34 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\ExeInternal (with target sample)\FakeExeInternal.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\ExeInternal (with target sample)\FakeExeInternal.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\w
+       inapioverride32_src\__Overriding Dll SDK\API\ExeInternal (with target sample)\FakeExeInternal.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\FakeExeInternal.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\FakeExeInternal.unsuccessfulbuild".
+         Touching "Debug\FakeExeInternal.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\ExeInternal (with target sample)\FakeExeInternal.vcxproj" (default targets).
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\ExeInternal (with target sample)\FakeExeInternal.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\w
+       inapioverride32_src\__Overriding Dll SDK\API\ExeInternal (with target sample)\TargetSample\TargetSample.vcxproj" (3) on node 2 (default targets).
+     3>InitializeBuildStatus:
+         Creating "Debug\TargetSample.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\TargetSample.unsuccessfulbuild".
+         Touching "Debug\TargetSample.lastbuildstate".
+     3>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\ExeInternal (with target sample)\TargetSample\TargetSample.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\ExeInternal (with target sample)\FakeExeInternal.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.31
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\GetDriveType\GetDriveType.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:34 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\GetDriveType\GetDriveType.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\GetDriveType\GetDriveType.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__O
+       verriding Dll SDK\API\GetDriveType\GetDriveType.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\GetDriveType.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\GetDriveType.unsuccessfulbuild".
+         Touching "Debug\GetDriveType.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\GetDriveType\GetDriveType.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\GetDriveType\GetDriveType.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.23
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\HideMe\HideMe.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:35 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\HideMe\HideMe.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\HideMe\HideMe.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dl
+       l SDK\API\HideMe\HideMe.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\HideMe.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\HideMe.unsuccessfulbuild".
+         Touching "Debug\HideMe.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\HideMe\HideMe.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\HideMe\HideMe.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.14
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\IsDebuggerPresent\FakeIsDebuggerPresent.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:35 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\IsDebuggerPresent\FakeIsDebuggerPresent.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\IsDebuggerPresent\FakeIsDebuggerPresent.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapiover
+       ride32_src\__Overriding Dll SDK\API\IsDebuggerPresent\FakeIsDebuggerPresent.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\FakeIsDebuggerPresent.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\FakeIsDebuggerPresent.unsuccessfulbuild".
+         Touching "Debug\FakeIsDebuggerPresent.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\IsDebuggerPresent\FakeIsDebuggerPresent.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\IsDebuggerPresent\FakeIsDebuggerPresent.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.13
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\MessageBox\FakeMsgBox.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:35 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\MessageBox\FakeMsgBox.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\MessageBox\FakeMsgBox.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overr
+       iding Dll SDK\API\MessageBox\FakeMsgBox.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\FakeMsgBox.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\FakeMsgBox.unsuccessfulbuild".
+         Touching "Debug\FakeMsgBox.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\MessageBox\FakeMsgBox.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\MessageBox\FakeMsgBox.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.15
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\PrePostHooksMsgBox\PrePostHooksMsgBox.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:35 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\PrePostHooksMsgBox\PrePostHooksMsgBox.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\PrePostHooksMsgBox\PrePostHooksMsgBox.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverri
+       de32_src\__Overriding Dll SDK\API\PrePostHooksMsgBox\PrePostHooksMsgBox.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\FakePrePostHooksMsgBox.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+     2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\PrePos
+       tHooksMsgBox\Debug\FakePrePostHooksMsgBox.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\PrePostHooksMsgBo
+       x\Debug\PrePostHooksMsgBox.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specifi
+       ed in %(Link.OutputFile). [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\PrePostHooksMsgBox\PrePostHooksMsgBox.vcxproj]
+     2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(FakePrePostHooksMsgBox) does not match the Linker's OutputFile property value (PrePostHook
+       sMsgBox). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile
+       ). [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\PrePostHooksMsgBox\PrePostHooksMsgBox.vcxproj]
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\FakePrePostHooksMsgBox.unsuccessfulbuild".
+         Touching "Debug\FakePrePostHooksMsgBox.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\PrePostHooksMsgBox\PrePostHooksMsgBox.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\PrePostHooksMsgBox\PrePostHooksMsgBox.sln" (default targets).
+
+Build succeeded.
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\PrePostHooksMsgBox\PrePostHooksMsgBox.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\PrePostHooksMsgBox\PrePostHooksMsgBox.vcxproj" (default target) (2) ->
+       (DoLinkOutputFilesMatch target) ->
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\PreP
+       ostHooksMsgBox\Debug\FakePrePostHooksMsgBox.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\PrePostHooksMsg
+       Box\Debug\PrePostHooksMsgBox.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value speci
+       fied in %(Link.OutputFile). [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\PrePostHooksMsgBox\PrePostHooksMsgBox.vcxproj]
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(FakePrePostHooksMsgBox) does not match the Linker's OutputFile property value (PrePostHo
+       oksMsgBox). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFi
+       le). [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\PrePostHooksMsgBox\PrePostHooksMsgBox.vcxproj]
+
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.19
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\EmulatedRegistryCreator\EmulatedRegistryCreator.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:36 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\EmulatedRegistryCreator\EmulatedRegistryCreator.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\EmulatedRegistryCreator\EmulatedRegistryCreator.sln" (1) is building "C:\Users\CE1CECL\win
+       dows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\EmulatedRegistryCreator\EmulatedRegistryCreator.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\EmulatedRegistryCreator.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\EmulatedRegistryCreator.unsuccessfulbuild".
+         Touching "Debug\EmulatedRegistryCreator.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\EmulatedRegistryCreator\EmulatedRegistryCreator.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\EmulatedRegistryCreator\EmulatedRegistryCreator.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.17
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\EmulatedRegistryEditor\EmulatedRegistryEditor.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:36 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\EmulatedRegistryEditor\EmulatedRegistryEditor.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\EmulatedRegistryEditor\EmulatedRegistryEditor.sln" (1) is building "C:\Users\CE1CECL\windo
+       ws-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\EmulatedRegistryEditor\EmulatedRegistryEditor.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\EmulatedRegistryEditor.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\EmulatedRegistryEditor.unsuccessfulbuild".
+         Touching "Debug\EmulatedRegistryEditor.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\EmulatedRegistryEditor\EmulatedRegistryEditor.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\EmulatedRegistryEditor\EmulatedRegistryEditor.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.16
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\Launcher\Launcher.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:36 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\Launcher\Launcher.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\Launcher\Launcher.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverri
+       de32_src\__Overriding Dll SDK\API\RegistryReplacement\Launcher\Launcher.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Touching "Debug\Launcher.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope
+         /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue LauncherOptions.cpp
+         LauncherOptions.cpp
+     2>c:\users\ce1cecl\windows-api-override\winapioverride32_src\__overriding dll sdk\api\registryreplacement\launcher\launcheroptions.cpp(74): warning C4996: '_snprintf': This function or variable may be unsa
+       fe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\
+       API\RegistryReplacement\Launcher\Launcher.vcxproj]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     2>c:\users\ce1cecl\windows-api-override\winapioverride32_src\__overriding dll sdk\api\registryreplacement\launcher\launcheroptions.cpp(85): warning C4996: '_snprintf': This function or variable may be unsa
+       fe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\
+       API\RegistryReplacement\Launcher\Launcher.vcxproj]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     2>c:\users\ce1cecl\windows-api-override\winapioverride32_src\__overriding dll sdk\api\registryreplacement\launcher\launcheroptions.cpp(102): warning C4996: '_snprintf': This function or variable may be uns
+       afe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK
+       \API\RegistryReplacement\Launcher\Launcher.vcxproj]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     2>c:\users\ce1cecl\windows-api-override\winapioverride32_src\__overriding dll sdk\api\registryreplacement\launcher\launcheroptions.cpp(117): warning C4996: '_snprintf': This function or variable may be uns
+       afe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK
+       \API\RegistryReplacement\Launcher\Launcher.vcxproj]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     2>c:\users\ce1cecl\windows-api-override\winapioverride32_src\__overriding dll sdk\api\registryreplacement\launcher\launcheroptions.cpp(161): error C2664: 'BOOL CIniFile::Get(TCHAR *,DWORD,DWORD *)' : canno
+       t convert parameter 3 from 'int *' to 'DWORD *' [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\Launcher\Launcher.vcxproj]
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     2>c:\users\ce1cecl\windows-api-override\winapioverride32_src\__overriding dll sdk\api\registryreplacement\launcher\launcheroptions.cpp(174): error C2668: 'CIniFile::Set' : ambiguous call to overloaded func
+       tion [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\Launcher\Launcher.vcxproj]
+                 c:\users\ce1cecl\windows-api-override\tools\ini\inifile.h(61): could be 'BOOL CIniFile::Set(TCHAR *,ULONG64)'
+                 c:\users\ce1cecl\windows-api-override\tools\ini\inifile.h(60): or       'BOOL CIniFile::Set(TCHAR *,DWORD)'
+                 while trying to match the argument list '(const char [14], int)'
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\Launcher\Launcher.vcxproj" (default targets) -- FAILED.
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\Launcher\Launcher.sln" (default targets) -- FAILED.
+
+Build FAILED.
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\Launcher\Launcher.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\Launcher\Launcher.vcxproj" (default target) (2) ->
+       (ClCompile target) ->
+         c:\users\ce1cecl\windows-api-override\winapioverride32_src\__overriding dll sdk\api\registryreplacement\launcher\launcheroptions.cpp(74): warning C4996: '_snprintf': This function or variable may be un
+       safe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SD
+       K\API\RegistryReplacement\Launcher\Launcher.vcxproj]
+         c:\users\ce1cecl\windows-api-override\winapioverride32_src\__overriding dll sdk\api\registryreplacement\launcher\launcheroptions.cpp(85): warning C4996: '_snprintf': This function or variable may be un
+       safe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SD
+       K\API\RegistryReplacement\Launcher\Launcher.vcxproj]
+         c:\users\ce1cecl\windows-api-override\winapioverride32_src\__overriding dll sdk\api\registryreplacement\launcher\launcheroptions.cpp(102): warning C4996: '_snprintf': This function or variable may be u
+       nsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll S
+       DK\API\RegistryReplacement\Launcher\Launcher.vcxproj]
+         c:\users\ce1cecl\windows-api-override\winapioverride32_src\__overriding dll sdk\api\registryreplacement\launcher\launcheroptions.cpp(117): warning C4996: '_snprintf': This function or variable may be u
+       nsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll S
+       DK\API\RegistryReplacement\Launcher\Launcher.vcxproj]
+
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\Launcher\Launcher.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\Launcher\Launcher.vcxproj" (default target) (2) ->
+       (ClCompile target) ->
+         c:\users\ce1cecl\windows-api-override\winapioverride32_src\__overriding dll sdk\api\registryreplacement\launcher\launcheroptions.cpp(161): error C2664: 'BOOL CIniFile::Get(TCHAR *,DWORD,DWORD *)' : can
+       not convert parameter 3 from 'int *' to 'DWORD *' [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\Launcher\Launcher.vcxproj]
+         c:\users\ce1cecl\windows-api-override\winapioverride32_src\__overriding dll sdk\api\registryreplacement\launcher\launcheroptions.cpp(174): error C2668: 'CIniFile::Set' : ambiguous call to overloaded fu
+       nction [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\Launcher\Launcher.vcxproj]
+
+    4 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.67
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\RegistryReplacementInjectedDll\RegistryReplacement.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:37 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\RegistryReplacementInjectedDll\RegistryReplacement.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\RegistryReplacementInjectedDll\RegistryReplacement.sln" (1) is building "C:\Users\CE1CECL\
+       windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\RegistryReplacementInjectedDll\RegistryReplacement.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\RegistryReplacement.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\RegistryReplacement.unsuccessfulbuild".
+         Touching "Debug\RegistryReplacement.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\RegistryReplacementInjectedDll\RegistryReplacement.vcxproj" (default targets
+       ).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\API\RegistryReplacement\RegistryReplacementInjectedDll\RegistryReplacement.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.16
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\ASM\AsmExeInternal (with asm target sample)\AsmExeInternal.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:37 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\ASM\AsmExeInternal (with asm target sample)\AsmExeInternal.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\ASM\AsmExeInternal (with asm target sample)\AsmExeInternal.sln" (1) is building "C:\Users\CE1CECL\windows-api-over
+       ride\winapioverride32_src\__Overriding Dll SDK\ASM\AsmExeInternal (with asm target sample)\AsmExeInternal.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\FakeAsmExeInternal.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       PreBuildEvent:
+         MakeMasmSub.bat
+         :VCEnd
+         Microsoft (R) Macro Assembler Version 10.00.40219.01
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+
+          Assembling: MasmSub.asm
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+     2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\ASM\AsmExe
+       Internal (with asm target sample)\Debug\FakeAsmExeInternal.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\ASM\
+       AsmExeInternal (with asm target sample)\Debug\AsmExeInternal.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) prope
+       rty values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\ASM\AsmExeInternal (with asm target sample)\AsmExeInternal.vcx
+       proj]
+     2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(FakeAsmExeInternal) does not match the Linker's OutputFile property value (AsmExeInternal)
+       . This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:\U
+       sers\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\ASM\AsmExeInternal (with asm target sample)\AsmExeInternal.vcxproj]
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"Debug\AsmExeInternal.dll" /INCREMENTAL /NOLOGO MasmSub.obj kernel32.lib user32.lib gdi32.lib winspool.lib co
+         mdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\FakeAsmExeInternal.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker'
+         uiAccess='false'" /DEBUG /PDB:"Debug\AsmExeInternal.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\AsmExeInternal.lib" /MACHINE:X86 /DLL Debug\FakeAsmExeInternal.dll.embed.manif
+         est.res
+         Debug\FakeASM.obj
+         Debug\GenericFakeAPI.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\FakeAsmExeInternal.dll.embed.manifest" /manifest Debug\FakeAsmExeInternal.dll.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         AsmExeInternal.vcxproj -> C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\ASM\AsmExeInternal (with asm target sample)\Debug\FakeAsmExeInternal.dll
+       FinalizeBuildStatus:
+         Deleting file "Debug\FakeAsmExeInternal.unsuccessfulbuild".
+         Touching "Debug\FakeAsmExeInternal.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\ASM\AsmExeInternal (with asm target sample)\AsmExeInternal.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\ASM\AsmExeInternal (with asm target sample)\AsmExeInternal.sln" (default targets).
+
+Build succeeded.
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\ASM\AsmExeInternal (with asm target sample)\AsmExeInternal.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\ASM\AsmExeInternal (with asm target sample)\AsmExeInternal.vcxproj" (default target) (2) ->
+       (DoLinkOutputFilesMatch target) ->
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\ASM\AsmE
+       xeInternal (with asm target sample)\Debug\FakeAsmExeInternal.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\AS
+       M\AsmExeInternal (with asm target sample)\Debug\AsmExeInternal.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) pro
+       perty values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\ASM\AsmExeInternal (with asm target sample)\AsmExeInternal.v
+       cxproj]
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(FakeAsmExeInternal) does not match the Linker's OutputFile property value (AsmExeInterna
+       l). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile). [C:
+       \Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\ASM\AsmExeInternal (with asm target sample)\AsmExeInternal.vcxproj]
+
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.47
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\COMObjectCreationSpy\COMObjectCreationSpy.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:38 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\COMObjectCreationSpy\COMObjectCreationSpy.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\COMObjectCreationSpy\COMObjectCreationSpy.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapiov
+       erride32_src\__Overriding Dll SDK\COM\COMObjectCreationSpy\COMObjectCreationSpy.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\FakeCOMObjectCreationSpy.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+     2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\COMObj
+       ectCreationSpy\Debug\FakeCOMObjectCreationSpy.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\COMObjectCrea
+       tionSpy\Debug\COMObjectCreationSpy.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value
+        specified in %(Link.OutputFile). [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\COMObjectCreationSpy\COMObjectCreationSpy.vcxproj]
+     2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(FakeCOMObjectCreationSpy) does not match the Linker's OutputFile property value (COMObject
+       CreationSpy). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.Output
+       File). [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\COMObjectCreationSpy\COMObjectCreationSpy.vcxproj]
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\FakeCOMObjectCreationSpy.unsuccessfulbuild".
+         Touching "Debug\FakeCOMObjectCreationSpy.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\COMObjectCreationSpy\COMObjectCreationSpy.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\COMObjectCreationSpy\COMObjectCreationSpy.sln" (default targets).
+
+Build succeeded.
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\COMObjectCreationSpy\COMObjectCreationSpy.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\COMObjectCreationSpy\COMObjectCreationSpy.vcxproj" (default target) (2) ->
+       (DoLinkOutputFilesMatch target) ->
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\COMO
+       bjectCreationSpy\Debug\FakeCOMObjectCreationSpy.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\COMObjectCr
+       eationSpy\Debug\COMObjectCreationSpy.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the val
+       ue specified in %(Link.OutputFile). [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\COMObjectCreationSpy\COMObjectCreationSpy.vcxproj]
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(FakeCOMObjectCreationSpy) does not match the Linker's OutputFile property value (COMObje
+       ctCreationSpy). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.Outp
+       utFile). [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\COMObjectCreationSpy\COMObjectCreationSpy.vcxproj]
+
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.14
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\QueryInterfaceRestriction\COMQueryInterfaceRestriction.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:38 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\QueryInterfaceRestriction\COMQueryInterfaceRestriction.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\QueryInterfaceRestriction\COMQueryInterfaceRestriction.sln" (1) is building "C:\Users\CE1CECL\windows-api-over
+       ride\winapioverride32_src\__Overriding Dll SDK\COM\QueryInterfaceRestriction\COMQueryInterfaceRestriction.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\FakeCOMQueryInterfaceRestriction.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+     2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\QueryI
+       nterfaceRestriction\Debug\FakeCOMQueryInterfaceRestriction.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\
+       QueryInterfaceRestriction\Debug\QueryInterfaceRestriction.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property
+        values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\QueryInterfaceRestriction\COMQueryInterfaceRestriction.vcxpro
+       j]
+     2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(FakeCOMQueryInterfaceRestriction) does not match the Linker's OutputFile property value (Q
+       ueryInterfaceRestriction). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in
+       %(Link.OutputFile). [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\QueryInterfaceRestriction\COMQueryInterfaceRestriction.vcxproj]
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\FakeCOMQueryInterfaceRestriction.unsuccessfulbuild".
+         Touching "Debug\FakeCOMQueryInterfaceRestriction.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\QueryInterfaceRestriction\COMQueryInterfaceRestriction.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\QueryInterfaceRestriction\COMQueryInterfaceRestriction.sln" (default targets).
+
+Build succeeded.
+
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\QueryInterfaceRestriction\COMQueryInterfaceRestriction.sln" (default target) (1) ->
+       "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\QueryInterfaceRestriction\COMQueryInterfaceRestriction.vcxproj" (default target) (2) ->
+       (DoLinkOutputFilesMatch target) ->
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\Quer
+       yInterfaceRestriction\Debug\FakeCOMQueryInterfaceRestriction.dll) does not match the Linker's OutputFile property value (C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\CO
+       M\QueryInterfaceRestriction\Debug\QueryInterfaceRestriction.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) proper
+       ty values match the value specified in %(Link.OutputFile). [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\QueryInterfaceRestriction\COMQueryInterfaceRestriction.vcxp
+       roj]
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(FakeCOMQueryInterfaceRestriction) does not match the Linker's OutputFile property value
+       (QueryInterfaceRestriction). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified i
+       n %(Link.OutputFile). [C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\COM\QueryInterfaceRestriction\COMQueryInterfaceRestriction.vcxproj]
+
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.14
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\NET\NET exe\FakeNET.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:39 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\NET\NET exe\FakeNET.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\NET\NET exe\FakeNET.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding
+       Dll SDK\NET\NET exe\FakeNET.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\FakeNET.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\FakeNET.unsuccessfulbuild".
+         Touching "Debug\FakeNET.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\NET\NET exe\FakeNET.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\NET\NET exe\FakeNET.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.14
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\NET\NET exe\target\NET_Target.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:39 AM.
+     0>C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\NET\NET exe\target\NET_Target.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio IDE
+       and converted to the latest version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\NET\NET exe\target\NET_Target.sln
+
+Build FAILED.
+
+         C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\NET\NET exe\target\NET_Target.sln : Solution file error MSB4054: The solution file must be opened in the Visual Studio ID
+       E and converted to the latest version before it can be built by MSBuild.  C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Overriding Dll SDK\NET\NET exe\target\NET_Target.sln
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.01
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\Example\Example.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:39 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\Example\Example.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\Example\Example.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\Example\Exam
+       ple.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\Example.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\Example.unsuccessfulbuild".
+         Touching "Debug\Example.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\Example\Example.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\Example\Example.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.14
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\HookChildProcesses\HookChildProcesses.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:39 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\HookChildProcesses\HookChildProcesses.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\HookChildProcesses\HookChildProcesses.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__P
+       lugin SDK\HookChildProcesses\HookChildProcesses.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\HookChildProcesses.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\HookChildProcesses.unsuccessfulbuild".
+         Touching "Debug\HookChildProcesses.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\HookChildProcesses\HookChildProcesses.vcxproj" (default targets).
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\HookChildProcesses\HookChildProcesses.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__P
+       lugin SDK\HookChildProcesses\TestTarget\TestTarget.vcxproj" (3) on node 2 (default targets).
+     3>InitializeBuildStatus:
+         Creating "Debug\TestTarget.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\HookChildProcesses\HookChildProcesses.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__P
+       lugin SDK\HookChildProcesses\overriding Dll\HookChildProcessesInjectedPart.vcxproj" (4) on node 3 (default targets).
+     4>InitializeBuildStatus:
+         Creating "Debug\HookChildProcessesInjectedPart.unsuccessfulbuild" because "AlwaysCreate" was specified.
+     3>Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+     4>ClCompile:
+         All outputs are up-to-date.
+     3>FinalizeBuildStatus:
+         Deleting file "Debug\TestTarget.unsuccessfulbuild".
+         Touching "Debug\TestTarget.lastbuildstate".
+     3>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\HookChildProcesses\TestTarget\TestTarget.vcxproj" (default targets).
+     4>ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\HookChildProcessesInjectedPart.unsuccessfulbuild".
+         Touching "Debug\HookChildProcessesInjectedPart.lastbuildstate".
+     4>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\HookChildProcesses\overriding Dll\HookChildProcessesInjectedPart.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\HookChildProcesses\HookChildProcesses.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.38
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\HookChildProcesses\overriding Dll\HookChildProcessesInjectedPart.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:40 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\HookChildProcesses\overriding Dll\HookChildProcessesInjectedPart.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\HookChildProcesses\overriding Dll\HookChildProcessesInjectedPart.sln" (1) is building "C:\Users\CE1CECL\windows-api-overri
+       de\winapioverride32_src\__Plugin SDK\HookChildProcesses\overriding Dll\HookChildProcessesInjectedPart.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\HookChildProcessesInjectedPart.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\HookChildProcessesInjectedPart.unsuccessfulbuild".
+         Touching "Debug\HookChildProcessesInjectedPart.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\HookChildProcesses\overriding Dll\HookChildProcessesInjectedPart.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\HookChildProcesses\overriding Dll\HookChildProcessesInjectedPart.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.14
+
+C:\Users\CE1CECL\windows-api-override>msbuild /m "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\MultiConfigurationsManager\MultiConfigManager.sln"
+Microsoft (R) Build Engine version 4.8.9032.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 3/15/2025 6:28:40 AM.
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\MultiConfigurationsManager\MultiConfigManager.sln" on node 1 (default targets).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Win32".
+     1>Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\MultiConfigurationsManager\MultiConfigManager.sln" (1) is building "C:\Users\CE1CECL\windows-api-override\winapioverride32
+       _src\__Plugin SDK\MultiConfigurationsManager\MultiConfigManager.vcxproj" (2) on node 1 (default targets).
+     2>InitializeBuildStatus:
+         Creating "Debug\MultiConfigManager.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\MultiConfigManager.unsuccessfulbuild".
+         Touching "Debug\MultiConfigManager.lastbuildstate".
+     2>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\MultiConfigurationsManager\MultiConfigManager.vcxproj" (default targets).
+     1>Done Building Project "C:\Users\CE1CECL\windows-api-override\winapioverride32_src\__Plugin SDK\MultiConfigurationsManager\MultiConfigManager.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.14
+
+C:\Users\CE1CECL\windows-api-override>
